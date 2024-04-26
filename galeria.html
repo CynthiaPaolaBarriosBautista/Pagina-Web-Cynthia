@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Sustentabilidad y Medio Ambiente</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.cdnfonts.com/css/lexend" rel="stylesheet">
+    <!-- Agregar jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Estilos adicionales aquí */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image-container {
+            margin: 10px;
+            position: relative;
+        }
+        .image-container img {
+            width: 250px;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .caption {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: none;
+            text-align: center;
+        }
+        .caption a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sustentabilidad y Medio Ambiente</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="consejos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Galería de Imágenes</h2>
+        <p>Enfocándonos en la Sustentabilidad Ambiental, estos son algunos ámbitos en los cuales afecta la falta de ésta:</p>
+        <div class="gallery">
+            <div class="image-container">
+                <a href="animales.html">
+                    <img src="img/pandita.jpeg" alt="Imagen 1">
+                    <div class="caption">Animales</div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="ecosistemasdeagua.html">
+                    <img src="img/agua.jpg" alt="Imagen 2">
+                    <div class="caption">Ecosistemas de agua</div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="atmosfera.html">
+                    <img src="img/Atmosfera.jpg" alt="Imagen 3">
+                    <div class="caption">Atmósfera</div>
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="reciclaje.html">
+                    <img src="img/Reciclaje.jpg" alt="Imagen 4">
+                    <div class="caption">Cultura de Reciclaje</div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <a href="recursos.html">Te invitamos a la próxima sección donde conocerás más recursos de sustentabilidad haciendo clic aquí -></a>
+    <footer>
+        <p>&copy; 2024 Sustentabilidad y Medio Ambiente</p>
+    </footer>
+
+    <script>
+        // Agregar jQuery para mostrar las descripciones al hacer clic en las imágenes
+        $(document).ready(function(){
+            $(".image-container").click(function(){
+                $(this).find(".caption").toggle();
+            });
+        });
+    </script>
+</body>
+</html>

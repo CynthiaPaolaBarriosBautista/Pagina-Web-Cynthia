@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Sustentabilidad y Medio Ambiente</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.cdnfonts.com/css/lexend" rel="stylesheet">
+    <!-- Agregar jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Estilos adicionales aquí */
+        article {
+            transition: opacity 0.5s ease-in-out;
+        }
+        /* Estilos para resaltar enlaces */
+        .highlight {
+            color: #1abc9c; /* Color verde para resaltar */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sustentabilidad y Medio Ambiente</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="informacion.html">Información</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="consejos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Últimas Entradas del Blog</h2>
+        <article>
+            <h3>Importancia de la Biodiversidad</h3>
+            <p>En este artículo discutimos la importancia de la biodiversidad para el equilibrio de los ecosistemas y la supervivencia de las especies.</p>
+            <a href="articulobiodiversidad.html">Leer más</a>
+        </article>
+        <article>
+            <h3>Consejos para practicar la Sustentabilidad</h3>
+            <p>Presentamos consejos prácticos para practicar la Sustentabilidad en la vida cotidiana y contribuir a la protección del medio ambiente.</p>
+            <a href="usodepalstico.html">Leer más</a>
+        </article>
+        <article>
+            <h3>Consejos para reducir la Huella de Carbono</h3>
+            <p>Este artículo proporciona información sobre cómo reducir la huella de carbono en la vida cotidiana y así ayudar al medio ambiente</p>
+            <a href="huelladecarbono.html">Leer más</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sustentabilidad y Medio Ambiente</p>
+    </footer>
+
+    <!-- Script de jQuery -->
+    <script>
+        $(document).ready(function(){
+            // Agregar clase de resaltado al pasar el cursor
+            $('nav ul li a').mouseenter(function(){
+                $(this).addClass('highlight');
+            }).mouseleave(function(){
+                $(this).removeClass('highlight');
+            });
+        });
+    </script>
+</body>
+</html>
